@@ -5,13 +5,13 @@ const rounter = express.Router();
 
 
 rounter.route('/')
-.get(controller.getBootCamp)
-.get(controller.createBootcamp)
+.get(controller.getAllBootCamp)
+.post(controller.createBootcamp)
 
 rounter.route('/:id')
 .get(controller.getBootCamp)
-.get(controller.updateBootcamp)
-.get(controller.deleteBootcamp)
+.put(controller.updateBootcamp)
+.delete(controller.deleteBootcamp)
 
 
 module.exports = rounter
