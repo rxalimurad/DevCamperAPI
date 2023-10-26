@@ -1,5 +1,5 @@
 const express = require('express');
-const controller = require('../controllers/bootcamp');
+const controller = require('../controllers/controller.bootcamp');
 const rounter = express.Router();
 
 
@@ -15,3 +15,4 @@ rounter.route('/:id')
 
 
 module.exports = rounter
+
