@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan')
 const colors = require('colors')
-const errorHandler = require('./middlewares/error')
+const errorHandler = require('./middlewares/middleware.error')
 const connectDB = require('./config/db')
 // Load env vars
 dotenv.config({path: './config/config.env'});
